@@ -1,0 +1,39 @@
+@import "config";
+@import "mixins";
+
+/*
+// The example
+*/
+
+@include placeholder('clear') {
+  clear: both;
+  overflow: hidden;
+}
+
+.a {
+  @include _(clear);
+}
+
+.b {
+  @include _(clear);
+}
+
+.c {
+  @include breakpoint(medium) {
+    @include _(clear);
+  }
+}
+
+@include breakpoint(medium) {
+  .d {
+    @include _(clear);
+  }
+}
+
+.e {
+  @include _(clear);
+
+  @include breakpoint(large) {
+    @include _(clear);
+  }
+}

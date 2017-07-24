@@ -1,0 +1,14 @@
+/*
+// Set Up and Configuration
+*/
+
+$breakpoints: (
+  "small"  : 600px,
+  "medium" : 900px,
+  "large"  : 1200px
+);
+
+$default-breakpoint: root;
+    $current-breakpoint: $default-breakpoint;
+
+$placeholders: ();
